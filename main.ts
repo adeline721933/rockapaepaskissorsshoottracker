@@ -45,15 +45,15 @@ function Reset () {
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     OLED.clear()
     if (P1 < P2) {
-        OLED.writeStringNewLine("Player 1 Wins!")
+        OLED.writeStringNewLine("Player 1 Wins!", 10)
         Reset()
     }
     if (P1 > P2) {
-        OLED.writeStringNewLine("Player 2 Wins!")
+        OLED.writeStringNewLine("Player 2 Wins!", 10)
         Reset()
     }
     if (P1 == P2) {
-        OLED.writeStringNewLine("It's a tie!")
+        OLED.writeStringNewLine("It's a tie!", 10)
         Reset()
     }
 })
